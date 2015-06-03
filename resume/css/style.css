@@ -1,0 +1,35 @@
+body {
+  color: ##293D3D;
+  background: rgba(156,171,186,0.8);
+  font-size: 16px;
+  line-height: 24px;
+}
+
+h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
+  padding-top: 20px;
+  font-family: "Helvetica", sans-serif;
+}
+
+blockquote {
+  font-style: italic;
+  font-size: 24px;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+ul {
+  line-height: 20px;
+}
+
+section {
+    max-width: 600px;
+     margin: 10px auto;
+}
+
+img {
+  border: 5px solid white;
+  border-radius: 100px;
+}
