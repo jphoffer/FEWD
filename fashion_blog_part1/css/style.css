@@ -1,0 +1,74 @@
+#container {
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+
+article {
+  padding-top: 50px;
+}
+
+header h1 a {
+  color: red;
+  text-decoration: none;
+  font-size: 60px;
+  font-family: lato;
+  font-weight: 300;
+}
+
+header h2 {
+  font-family: lato;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+nav {
+  text-align: center;
+  padding: 50px;
+}
+
+nav a {
+  color: rgb(199,199,199);
+  font-size: 20px;
+}
+
+h2 a {
+  text-decoration: none;
+  color: #000;
+  font-size: 36px;
+  font-family: lato;
+  padding-bottom: 50px;
+  font-weight: 300px;
+}
+
+h3 {
+  font-size: 36px;
+  color: rgb(199,199,199);
+  margin-bottom: 10px;
+}
+
+h4 a {
+  color: red;
+  text-decoration: none;
+  float: right;
+  font-size: 26px;
+  font-family: lato;
+}
+
+.cap-letter {
+  font-size: 80px;
+  float: left;
+  font-family: lato;
+  font-weight: 100;
+  color: rgb(199,199,199);
+}
+
+p {
+  line-height: 24px;
+}
+
+.bottom li a {
+  display: inline;
+  color: red;
+}
