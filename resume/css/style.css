@@ -1,13 +1,29 @@
 body {
-  color: ##293D3D;
-  background: rgba(156,171,186,0.8);
+  background: url('../img/chalk.jpg');
+  background-size: cover;
   font-size: 16px;
   line-height: 24px;
+  margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-h1, h2, h3, h4, h5, h6, p, a, li, blockquote {
-  padding-top: 20px;
+* {
+  box-sizing: border-box;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000;
+}
+h1, h2, h3, h4, h5, h6, p, a, blockquote {
+  padding: 20px;
   font-family: "Helvetica", sans-serif;
+  margin: 0px;
+}
+
+li {
+  padding: 5px;
 }
 
 blockquote {
@@ -16,22 +32,38 @@ blockquote {
 }
 
 header {
-  background: rgba(255, 255, 255, .5);
+  background: rgba(255, 255, 255, .3);
   text-align: center;
-  padding-top: 0px;
-}
-
-ul {
-  line-height: 20px;
-  padding-top: 5px;
+  padding-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 0px;
 }
 
 section {
-    max-width: 700px;
-     margin: 10px auto;
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
 }
 
 img {
   border: 10px solid white;
   border-radius: 100px;
+}
+
+#container {
+  width: 60%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, .8);
+  margin-top: 0px;
+}
+
+.button {
+  display: block;
+  color: #020202;
+  font-weight: bold;
+  background: rgba(255, 255, 255, .8);
+  padding: 8px;
+  text-decoration: none;
 }
