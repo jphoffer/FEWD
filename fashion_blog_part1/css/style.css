@@ -7,10 +7,16 @@
 
 article {
   padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+header {
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 header h1 a {
-  color: red;
+  color: rgb(222, 59, 48);
   text-decoration: none;
   font-size: 60px;
   font-family: lato;
@@ -20,17 +26,23 @@ header h1 a {
 header h2 {
   font-family: lato;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 30px;
+  margin-top: 20px;
 }
 
 nav {
   text-align: center;
-  padding: 50px;
+  margin-right: 20px;
+  margin-top: 20px;
 }
 
 nav a {
   color: rgb(199,199,199);
-  font-size: 20px;
+  font-size: 24px;
+  margin-right: 20px;
+  font-weight: 100;
+  font-family: lato;
+  float: left;
 }
 
 h2 a {
@@ -39,28 +51,31 @@ h2 a {
   font-size: 36px;
   font-family: lato;
   padding-bottom: 50px;
-  font-weight: 300px;
+  font-weight: 300;
 }
 
 h3 {
   font-size: 36px;
   color: rgb(199,199,199);
   margin-bottom: 10px;
+  font-family: lato;
+  font-weight: 100;
 }
 
 h4 a {
   color: red;
   text-decoration: none;
   float: right;
-  font-size: 26px;
+  font-size: 18px;
   font-family: lato;
+  font-weight: 400;
 }
 
 .cap-letter {
   font-size: 80px;
   float: left;
   font-family: lato;
-  font-weight: 100;
+  font-weight: 300;
   color: rgb(199,199,199);
 }
 
@@ -68,7 +83,23 @@ p {
   line-height: 24px;
 }
 
-.bottom li a {
+footer {
+  margin-top: 50px;
+  color: rgb(195, 195, 195);
+  font-family: lato;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+}
+
+footer a{
   display: inline;
   color: red;
+  text-decoration: none;
+  margin-bottom: 50px;
+}
+
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
