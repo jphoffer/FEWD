@@ -29,6 +29,7 @@ li {
 blockquote {
   font-style: italic;
   font-size: 24px;
+  padding-left: 40px;
 }
 
 header {
@@ -51,7 +52,7 @@ img {
 }
 
 #container {
-  width: 60%;
+  width: 75%;
   height: auto;
   position: relative;
   margin: 0 auto;
@@ -61,7 +62,7 @@ img {
 
 .button {
   display: block;
-  color: #020202;
+  color: #000;
   font-weight: bold;
   background: rgba(255, 255, 255, .8);
   padding: 8px;
