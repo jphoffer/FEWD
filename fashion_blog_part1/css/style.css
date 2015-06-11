@@ -3,7 +3,7 @@ body {
 }
 
 #container {
-  width: 740px;
+  width: 1000px;
   margin-left: 60px;
 }
 
@@ -86,7 +86,7 @@ h4 a {
   font-weight: 400;
 }
 
-.cap-letter {
+.dropcap {
   font-size: 80px;
   float: left;
   font-family: lato;
@@ -118,16 +118,19 @@ footer a{
 img {
   padding-top: 20px;
   padding-bottom: 20px;
+  max-width: 100%;
 }
 
 .content {
   position: relative;
   float:left;
-  width: 80%:
+  width: 80%;
+  width: 740;
 }
 
 .sidebar {
   position: relative;
   float:right;
   width: 20%;
+  margin-left: 20px;
 }
