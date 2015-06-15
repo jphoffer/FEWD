@@ -8,8 +8,12 @@ body {
   background: #fff;
   font-size: 18px;
   font-family: lato;
-  margin-left: 60px;
-  margin-top: 65px;
+  padding: 65px;
+}
+
+.preview {
+  background: url('../fashion_blog_part2.png');
+  background-repeat: no-repeat;
 }
 
 a {
@@ -21,13 +25,15 @@ a {
 }
 
 article {
-  padding-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 80px;
   border-bottom: 1px solid rgb(213, 213, 213);
+  margin-bottom: 10px;
 }
 
 header h1 a {
   color: rgb(222, 59, 48);
-  font-size: 54px;
+  font-size: 3em;
   font-weight: 300;
   float: left;
   margin-bottom: 20px;
@@ -36,7 +42,7 @@ header h1 a {
 header h2 {
   color: rgb(117, 117, 117);
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.5em;
   margin-top: 25px;
   float: left;
   margin-left: 25px;
@@ -79,7 +85,7 @@ nav a.active {
 
 h2 a {
   color: #000;
-  font-size: 36px;
+  font-size: 2em;
   font-weight: 300;
 }
 
@@ -88,7 +94,6 @@ article h3 {
   color: rgb(199,199,199);
   margin-bottom: 15px;
   font-weight: 300;
-  padding-top: 65px;
 }
 
 h4 a {
@@ -113,10 +118,10 @@ p {
 }
 
 footer {
-  padding-top: 60px;
   color: rgb(195, 195, 195);
   font-weight: 300;
-  line-height: 30px;
+  line-height: 3em;
+  padding-top: 36px;
   clear: both;
 }
 
@@ -151,7 +156,7 @@ img {
   float:right;
   width: 315px;
   margin-left: 20px;
-  padding-top: 140px;
+  padding-top: 80px;
 }
 
 .sidebar li a{
@@ -171,11 +176,10 @@ img {
 
 .ad {
   border-bottom: 1px solid rgb(213, 213, 213);
-  margin-bottom: 30px;
+  margin-bottom: 54px;
 }
 
 h4 {
   font-size: 18px;
   color: rgb(134, 134, 134);
-  padding-bottom: 25px;
 }
