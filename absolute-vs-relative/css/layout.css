@@ -15,7 +15,7 @@ section{
   position: relative;
   padding: 40px;
   background: #63DCEF;
-  border-bottom: 1px solid #DCDCDC;
+  border-bottom: 5px solid #DCDCDC;
   width: 80%;
   float: right;
 }
