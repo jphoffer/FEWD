@@ -1,0 +1,50 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+
+
+@import 'base/base.css';
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+@import 'comp/slider.css';
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
+#sidebar {
+  
+}
+
+nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  -webkit-transition: all 1.2s; /* Safari */
+  transition: all 1.2s;
+  background-color: #000;
+  width: 100px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.hamburger {
+  background:url('../img/hamburger.svg');
+  position: fixed;
+  left: 0;
+  top: 0;
+}

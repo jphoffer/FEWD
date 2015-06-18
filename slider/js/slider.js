@@ -9,35 +9,56 @@ Element.prototype.slider = function(){
     var leftButton = document.createElement('div');
     var rightButton = document.createElement('div');
 
-    var init = function(){
+    this.createButtons = function(){
 
-        wrapper.style.width = slides.length * width + 'px';
-        wrapper.style.height = '100%';
+      leftButton.classList.add('left');
+      rightButton.classList.add('right');
 
+      slider.appendChild(leftButton);
+      slider.appendChild(rightButton);
 
-        leftButton.classList.add('left');
-        rightButton.classList.add('right');
+      rightButton.addEventListener('mousedown',function(){
 
-        slider.appendChild(leftButton);
-        slider.appendChild(rightButton);
-
-        for(var i=0; i<slides.length; i++) {
-          slides[i].style.width = width + 'px';
+      if(position > (width * (slides.length -1)) * -1) {
+        position = position - width ;
+        wrapper.style.marginLeft = position + 'px';
         }
+      });
 
-        leftButton.addEventListener('mousedown',function(){
-          wrapper.style.marginLeft = width * position * -1 + 'px';
-          position = position + 1 ;
-        });
+      leftButton.addEventListener('mousedown',function(){
 
-        rightButton.addEventListener('mousedown',function(){
-          position = position - 1;
-          wrapper.style.marginLeft = width * position * -1 + 'px';
-        });
+        if(position < 0) {
+        position = position + width;
+        wrapper.style.marginLeft = position + 'px';
+      }
+      });
 
     };
 
-    init();
+    this.resize = function(){
 
-};
+      width = window.innerWidth;
+
+      wrapper.style.width = slides.length * width + 'px';
+      wrapper.style.height = '100%';
+
+      for(var i=0; i<slides.length; i++) {
+        slides[i].style.width = width + 'px';
+      }
+
+    };
+
+    this.init = function(){
+
+      this.createButtons();
+      this.resize();
+
+      window.addEventListener('resize',slider.resize);
+
+    };
+
+    this.init();
+
+    };
+
 /* end Slider */
