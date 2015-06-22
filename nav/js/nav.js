@@ -1,24 +1,44 @@
-Element.prototype.container = function(){
+Element.prototype.Hamburger = function(hamburgerMenu){
 
-      var sidebar = this,
-      wrapper = container,
-      position = 0,
+  var hamburger = this;
+  var menu = hamburgerMenu;
 
-      hamburger = document.createElement('div');
+  this.showing = false;
 
-  this.createButton = function(){
-
-    hamburger.classList.add('hamburger');
-
-    hamburger.addEventListener('mousedown',function(){
-      if(position > (width * (sidebar.length - 1)) * -1){
-        position = position - width;
-        wrapper.style.marginLeft = position + "px";
-      }
-    });
-
-    this.init = function(){
-      sidebar.createButtons();
-    };
-      this.init();
+  this.slideOut = function() {
+    menu.style.marginLeft = "0";
+    hamburger.style.left = "250px";
+    hamburger.showing = true;
   };
+
+  this.slideIn = function() {
+    menu.style.marginLeft = "-250px";
+    hamburger.style.left = "0";
+    hamburger.showing = false;
+  };
+
+  hamburger.addEventListener('mousedown',function(){
+    if (hamburger.showing) {
+      hamburger.slideIn();
+    } else {
+      hamburger.slideOut();
+    }
+  });
+
+  this.resizeMenu = function() {
+    var body = document.body,
+        html = document.documentElement;
+
+    var height = Math.max( body.scrollHeight, body.offsetHeight,
+        html.clientHeight, html.scrollHeight, html.offsetHeight );
+
+    menu.style.height = height + "px";
+  };
+
+  this.init = function(){
+    hamburger.resizeMenu();
+  };
+
+  this.init();
+
+};

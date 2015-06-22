@@ -1,5 +1,6 @@
 var sliderElement = document.getElementById('slider');
 sliderElement.Slider();
 
-var sidebarElement = document.getElementById('container');
-containerElement.container();
+var hamburger = document.getElementById('ham');
+var hamburgerMenu = document.getElementById('burger');
+hamburger.Hamburger(hamburgerMenu);
