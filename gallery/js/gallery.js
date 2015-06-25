@@ -3,44 +3,46 @@ Element.prototype.Gallery = function(){
   var gallery = this;
   var ul = gallery.children[0];
   var photos = {};
+  var container = document.getElementById('container');
   // Define global variables
+
+  this.singlePhoto = function(ev) {
+
+      console.log(ev.target.style.backgroundImage);
+
+
+      var section = document.createElement('section');
+
+      section.classList.add('single-photo');
+
+      section.innerHTML = ev.target.innerHTML;
+      section.style.backgroundImage = ev.target.style.backgroundImage;
+      //section.style.backgroundRepeat = 'no-repeat';
+      //section.style.backgroundSize = 'contain';
+      section.style.backgroundPosition = 'left';
+      //section.style.height = '100%';
+      var p = document.createElement('p');
+      p.innerHTML = ev.target.dataset.description;
+
+      var closeButton = document.createElement('div');
+      closeButton.classList.add('close');
+
+      closeButton.addEventListener('click',function() {
+        section.style.display = 'none';
+      });
+
+      section.children[0].appendChild(p);
+      section.appendChild(closeButton);
+      container.appendChild(section);
+  };
 
   this.layoutPhotos = function(){
       // add logic for each photo in here
-      console.log(photos);
+
       photos.forEach(function(photo,index){
 
 
 
-//my failed lightbox
-  var singlePhoto = document.createElement('single-photo');
-  var close = document.createElement('close');
-
-  this.singlePhoto = function(){
-    li.innerHTML = '<div class="single-photo"><h5>'+
-    photo.name+
-    '</h5><h6>'+
-    photo.user.fullname+
-    '</h6></div><div class="stats"><div>'+
-    photo.rating+'</div></div>'+
-    '</div>';
-
-      console.log(singlePhoto)
-};
-
-
-  this.createButton = function(){
-    close.classList.add('close');
-
-    close.addEventListener('mousedown', singlePhoto);
-
-    singlePhoto.appendChild(close);
-
-};
-
-
-
-//end of attempt
 
         console.log(photo);
         var li = document.createElement('li');
@@ -56,6 +58,7 @@ Element.prototype.Gallery = function(){
           photo.rating+'</div></div>'+
           '</div>';
 
+          li.dataset.description = photo.description;
           li.addEventListener('click',gallery.singlePhoto);
 
         ul.appendChild(li);

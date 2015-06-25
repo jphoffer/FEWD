@@ -1,0 +1,9 @@
+body {
+  font-size: 36px;
+  color: #424242;
+  background: red;
+}
+
+#container {
+  width: 700px;
+}
