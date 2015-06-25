@@ -11,31 +11,36 @@ Element.prototype.Gallery = function(){
       photos.forEach(function(photo,index){
 
 
-    this.singlePhoto = function(ev) {
 
-          console.log(ev);
-        };
+//my failed lightbox
+  var singlePhoto = document.createElement('single-photo');
+  var close = document.createElement('close');
 
-//added in class
-this.expandLi = function(){
+  this.singlePhoto = function(){
     li.innerHTML = '<div class="single-photo"><h5>'+
-      photo.name+
-      '</h5><h6>'+
-      photo.user.fullname+
-      '</h6></div><div class="stats"><div>'+
-      photo.rating+'</div></div>'+
-      '</div>';
+    photo.name+
+    '</h5><h6>'+
+    photo.user.fullname+
+    '</h6></div><div class="stats"><div>'+
+    photo.rating+'</div></div>'+
+    '</div>';
+
+      console.log(singlePhoto)
+};
+
+
+  this.createButton = function(){
+    close.classList.add('close');
+
+    close.addEventListener('mousedown', singlePhoto);
+
+    singlePhoto.appendChild(close);
 
 };
 
 
-this.createButton = function(){
-    btn.classList.add('single-photo');
-    btn.addEventListener('mousedown', expandLi);
 
-};
-
-//end of class additions
+//end of attempt
 
         console.log(photo);
         var li = document.createElement('li');
