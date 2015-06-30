@@ -17,9 +17,10 @@ Element.prototype.Gallery = function(){
 
       section.innerHTML = ev.target.innerHTML;
       section.style.backgroundImage = ev.target.style.backgroundImage;
+
       //section.style.backgroundRepeat = 'no-repeat';
       //section.style.backgroundSize = 'contain';
-      section.style.backgroundPosition = 'left';
+      //section.style.backgroundPosition = 'center center';
       //section.style.height = '100%';
       var p = document.createElement('p');
       p.innerHTML = ev.target.dataset.description;
