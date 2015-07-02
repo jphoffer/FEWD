@@ -5,11 +5,12 @@ function Thermostat(){
   /* declare variables needed for Thermostat here */
   var currentTemp = 64;
   var upButton = document.getElementById('up');
+  console.log(upButton)
   var downButton = document.getElementById('down');
   var temperatureText = document.getElementById('temp');
   var body = document.getElementsByTagName('body')[0];
+  console.log(body)
 
-  console.log(body);
 
   var convertTempToColor = function(temp){
 
@@ -29,8 +30,6 @@ function Thermostat(){
   /* This function initializes the module */
   var init = function(){
 
-    console.log('Thermostat is on.');
-    console.log('The current temperature is '+currentTemp+'.');
     changeTemperature(currentTemp);
 
     upButton.addEventListener('mousedown',function(){
