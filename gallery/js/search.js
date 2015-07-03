@@ -1,29 +1,29 @@
 Element.prototype.Search = function(){
-  var gallery = document.getElementById('gallery'),
-      search = this,
-      
+  var gallery = document.getElementById('gallery');
+  var search = this;
+  var input = this.children[0];
+
+//  gallery.filterPhotos(query);
 
 
 
-  //gallery.getFilteredLis()
+  this.init = function(){
 
+    input.addEventListener('focus',function(){
+      this.value = '';
+    });
 
+    input.addEventListener('keyup',function(ev){
 
-this.search = function(){
+        if(ev.keyCode === 13) {
+          var query = input.value;
+          gallery.filterPhotos(query);
+        }
+    });
+  };
 
-li.dataset.tags = photo.tags
-
-};
-
-
-window.addEventListener("keydown",function(ev){
-
-   if(ev.keyCode === 13){
-     search.searchResults(input.value);
-   }
-
- });
 
  this.init();
+
 
  };

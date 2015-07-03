@@ -37,6 +37,31 @@ Element.prototype.Gallery = function(){
       container.appendChild(section);
   };
 
+  this.filterPhotos = function(query) {
+      for(var i=0; i<ul.children.length; i++) {
+        var tags = ul.children[i].dataset.tags; //grab the tags
+        var arr = tags.split(',');
+        var matched = false;
+
+        arr.forEach(function(tag){
+          if(tag === query){ //check if a tag = query
+            ul.children[i].style.display = 'block'; //if match show li
+            matched = true;
+          }
+        });
+
+        if(matched === false){
+          ul.children[i].style.display = 'none';
+        }
+
+        if(query === 'all') {
+          ul.children[i].style.display = 'block';
+        }
+        //if no match hide li
+      }
+
+  };
+
   this.layoutPhotos = function(){
       // add logic for each photo in here
 
@@ -44,8 +69,6 @@ Element.prototype.Gallery = function(){
 
 
 
-
-        console.log(photo);
         var li = document.createElement('li');
 
         li.style.backgroundImage = 'url("'+photo.image_url+'")';
@@ -59,7 +82,15 @@ Element.prototype.Gallery = function(){
           photo.rating+'</div></div>'+
           '</div>';
 
+        var tags = [];
+
+          photo.tags.forEach(function(tag){
+            tags.push(tag.toLowerCase());
+          });
+
+          li.dataset.tags = tags;
           li.dataset.description = photo.description;
+
           li.addEventListener('click',gallery.singlePhoto);
 
         ul.appendChild(li);
