@@ -8,43 +8,42 @@ h1 {
   font-size: 36px
 }
 
-
-
-li {
-  display: inline-block;
-  float:left;
+.clearfix {
+  overflow: auto;
 }
 
+
 /* entire container, keeps perspective */
-.flip-container {
+.card-table {
 	perspective: 1000;
 }
 	/* flip the pane when hovered */
-	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	.card-table:hover .flipper, .card-table.hover .flipper {
 		transform: rotateY(180deg);
 	}
 
-.flip-container, .front, .back {
-	width: 250px;
-	height: 350px;
+.front, .back {
+	width: 116px;
+	height: 163px;
 }
 
 /* flip speed goes here */
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-
+  display: inline-block;
+  float:left;
 	position: relative;
+  width: 116px;
+  height: 163px;
+  padding: 10px;
 }
 
 /* hide back of pane during swap */
 
 .front, .back {
 	backface-visibility: hidden;
-
 	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 /* front pane, placed above back */
@@ -54,29 +53,46 @@ li {
 	transform: rotateY(0deg);
   background-image: url('../img/bicycle-back.jpg');
   background-size: cover;
-  width:250px;
-  height: 350px;
+  width:116px;
+  height: 163px;
 }
 
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
+
+
+}
+
+.suit-club {
   background-image: url('../img/french-suits.svg');
+  background-color: #fff;
+  background-position: 10px 10px;
+  width: 116px;
+  height: 163px;
+}
+
+.suit-heart {
+  background-image: url('../img/french-suits.svg');
+  background-color: #fff;
+  background-position: right top;
+  width: 80px;
+  height: 80px;
+}
+
+.suit-diamond {
+  background-image: url('../img/french-suits.svg');
+  background-color: #fff;
+  background-position: left bottom;
+  width: 80px;
+  height: 80px;
 
 }
 
-.heart {
-
-}
-
-.club {
-
-}
-
-.spade {
-
-}
-
-.diamond {
-
+.suit-spade {
+  background-image: url('../img/french-suits.svg');
+  background-color: #fff;
+  background-position: right bottom;
+  width: 80px;
+  height: 80px;
 }
