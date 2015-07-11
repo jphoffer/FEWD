@@ -33,16 +33,10 @@ var flipAndCompare = function(card) {
     return;
   }
 
-  if (getSuit(firstCardFlipped) != getSuit(card)) {
-    flip(card);
-    setTimeout(function(){
-      unFlip(card);
-      unFlip(firstCardFlipped);
-      firstCardFlipped = null;
-    },1000);
+  if (getSuit(firstCardFlipped) == getSuit(card)) {
+    youGuessedRight();
   } else {
-    remainingMatches--;
-    firstCardFlipped = null;
+    youGuessedWrong(card);
   }
 
   if (remainingMatches == 0) {
@@ -54,7 +48,21 @@ var youWin = function() {
   document.getElementById('title').innerHTML = "You Win!";
 }
 
-var flip = function(card){
+var youGuessedRight = function() {
+  remainingMatches--;
+  firstCardFlipped = null;
+}
+
+var youGuessedWrong = function(card) {
+  flip(card);
+  setTimeout(function() {
+    unFlip(card);
+    unFlip(firstCardFlipped);
+    firstCardFlipped = null;
+  }, 1000);
+}
+
+var flip = function(card) {
   card.classList.add('flipped');
 }
 
