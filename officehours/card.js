@@ -35,3 +35,5 @@ function MyObject (){
 var x = new MyObject();
 
 x.showValue();
+
+var View 

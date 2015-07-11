@@ -1,55 +1,83 @@
-var cardMatch = function(){
-  var container = document.getElementById('container');
+var arr = [
+  'heart', 'spade', 'club', 'diamond',
+  'heart', 'spade', 'club', 'diamond',
+  'heart', 'spade', 'club', 'diamond',
+  'heart', 'spade', 'club', 'diamond'
+];
+
+var init = function(table) {
+  var shuffledArray = shuffle(arr);
+  shuffledArray.forEach(function(suit) {
+    var card = makeCard(suit);
+
+    card.addEventListener('click', function() {
+      card.classList.add('flipped');
+    });
+
+    table.appendChild(card);
+  });
 };
 
-//match function happens here
-var compare = function(){
-  for(var i = 0; i< arr.length; i++) {
-    var matched = false;
+var makeCard = function(suit) {
+  var card = document.createElement('div');
+  var front = document.createElement('div');
+  var back = document.createElement('div');
+  var cardSuit = document.createElement('div');
 
-  arr.forEach(function(tag){
-          if(tag === query){ //check if a tag = query
-            container.children[i].style.display = 'front'; //if match show li
-            matched = true;
-          }
-        });
 
-        if(matched === false){
-          container.children[i].style.display = 'back';
-        }
+  card.classList.add('card');
+  front.classList.add('front');
+  back.classList.add('back');
+  cardSuit.classList.add(suit);
 
-}
-//call transition?
+  card.appendChild(front);
+  card.appendChild(back);
+  front.appendChild(cardSuit);
 
-//create card happens here
-this.makeCard = function() {
-  var card = document.createElement('card');
-  section.classList.add('')
+  return card;
 }
 
-//randomize card happens here -- this is done
-var arr = ['heart', 'spade', 'club', 'diamond','heart', 'spade', 'club', 'diamond','heart', 'spade', 'club', 'diamond','heart', 'spade', 'club', 'diamond'];
-  shuffle(arr);
-  console.log(arr);
+var shuffle = function(array) {
+  var currentIndex = array.length,
+    temporaryValue, randomIndex;
 
-  function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex ;
-
-  // While there remain elements to shuffle...
   while (0 !== currentIndex) {
-
-    // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
     currentIndex -= 1;
 
-    // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
 
   return array;
-}
+};
+
+
+//////////////////////////////////
+
+var cardMatch = function() {};
+
+//match function happens here
+var compare = function() {
+  for (var i = 0; i < arr.length; i++) {
+    var matched = false;
+
+    arr.forEach(function(tag) {
+      if (tag === query) { //check if a tag = query
+        container.children[i].style.display = 'front'; //if match show li
+        matched = true;
+      }
+    });
+
+    if (matched === false) {
+      container.children[i].style.display = 'back';
+    }
+
+  }
+};
+
 
 
 //call functions and run them
+init(document.getElementById('card-table'));
