@@ -6,6 +6,7 @@ var arr = [
 ];
 
 var firstCardFlipped;
+var remainingMatches = 8;
 
 var init = function(table) {
   var shuffledArray = shuffle(arr);
@@ -40,9 +41,18 @@ var flipAndCompare = function(card) {
       firstCardFlipped = null;
     },1000);
   } else {
+    remainingMatches--;
     firstCardFlipped = null;
   }
+
+  if (remainingMatches == 0) {
+    youWin();
+  }
 };
+
+var youWin = function() {
+  document.getElementById('title').innerHTML = "You Win!";
+}
 
 var flip = function(card){
   card.classList.add('flipped');
@@ -92,31 +102,4 @@ var shuffle = function(array) {
   return array;
 };
 
-
-//////////////////////////////////
-
-var cardMatch = function() {};
-
-//match function happens here
-var compare = function() {
-  for (var i = 0; i < arr.length; i++) {
-    var matched = false;
-
-    arr.forEach(function(tag) {
-      if (tag === query) { //check if a tag = query
-        container.children[i].style.display = 'front'; //if match show li
-        matched = true;
-      }
-    });
-
-    if (matched === false) {
-      container.children[i].style.display = 'back';
-    }
-
-  }
-};
-
-
-
-//call functions and run them
 init(document.getElementById('card-table'));
