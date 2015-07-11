@@ -8,35 +8,23 @@ h1 {
   font-size: 36px
 }
 
-.clearfix {
-  overflow: auto;
-}
-
-
 /* entire container, keeps perspective */
-.card-table {
-	perspective: 1000;
-}
+
 	/* flip the pane when hovered */
-	.card-table:hover .flipper, .card-table.hover .flipper {
+	.card-table:hover .card, .card-table.hover .card {
 		transform: rotateY(180deg);
 	}
 
-.front, .back {
-	width: 116px;
-	height: 163px;
-}
-
 /* flip speed goes here */
-.flipper {
+.card {
 	transition: 0.6s;
 	transform-style: preserve-3d;
-  display: inline-block;
-  float:left;
 	position: relative;
+  float:left;
   width: 116px;
   height: 163px;
   padding: 10px;
+
 }
 
 /* hide back of pane during swap */
@@ -44,6 +32,7 @@ h1 {
 .front, .back {
 	backface-visibility: hidden;
 	position: absolute;
+  border-radius: 8px;
 }
 
 /* front pane, placed above back */
@@ -51,8 +40,7 @@ h1 {
 	z-index: 2;
 	/* for firefox 31 */
 	transform: rotateY(0deg);
-  background-image: url('../img/bicycle-back.jpg');
-  background-size: cover;
+  background-color: #fff;
   width:116px;
   height: 163px;
 }
@@ -60,39 +48,37 @@ h1 {
 /* back, initially hidden pane */
 .back {
 	transform: rotateY(180deg);
-
-
-}
-
-.suit-club {
-  background-image: url('../img/french-suits.svg');
-  background-color: #fff;
-  background-position: 10px 10px;
+  background-image: url('../img/bicycle-back.jpg');
+  background-size: cover;
   width: 116px;
   height: 163px;
 }
 
-.suit-heart {
+.club {
   background-image: url('../img/french-suits.svg');
-  background-color: #fff;
-  background-position: right top;
-  width: 80px;
-  height: 80px;
+  background-position: 10px 5px;
+  width: 90px;
+  height: 100px;
 }
 
-.suit-diamond {
+.heart {
   background-image: url('../img/french-suits.svg');
-  background-color: #fff;
-  background-position: left bottom;
+  background-position: 100px 0px;
+  width: 100px;
+  height: 100px;
+}
+
+.diamond {
+  background-image: url('../img/french-suits.svg');
+  background-position: 5px 105px;
   width: 80px;
-  height: 80px;
+  height: 100px;
 
 }
 
-.suit-spade {
+.spade {
   background-image: url('../img/french-suits.svg');
-  background-color: #fff;
-  background-position: right bottom;
-  width: 80px;
-  height: 80px;
+  background-position: 100px 100px;
+  width: 95px;
+  height: 100px;
 }
