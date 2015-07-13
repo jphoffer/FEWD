@@ -59,7 +59,7 @@ var youGuessedWrong = function(card) {
     unFlip(card);
     unFlip(firstCardFlipped);
     firstCardFlipped = null;
-  }, 1000);
+  }, 500);
 }
 
 var flip = function(card) {
