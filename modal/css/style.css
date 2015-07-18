@@ -1,0 +1,102 @@
+
+body {
+  background: #fff;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  font-family: "Lato";
+}
+
+header {
+  background: #000;
+  height: 50px;
+}
+
+nav {
+  float:left;
+  width: 25%;
+}
+
+nav li {
+  display: inline-block;
+  margin: 10px;
+  background-color: rgb(139, 200, 232);
+
+}
+
+nav li a {
+  color: #fff;
+  font-size: 18px;
+}
+
+
+p {
+  font-size: 18px;
+  line-height: 1.5em;
+
+}
+
+footer {
+  background: #aaa;
+  clear: both;
+}
+
+header h1 {
+  color: #fff;
+  text-decoration: none;
+  font-size: 32px;
+  font-family: "Lato";
+  font-weight: 300;
+  float: left;
+  width: 75%;
+}
+
+.container {
+  position: relative;
+}
+
+.sidebar {
+  width: 15%;
+  position: relative;
+  float: left;
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+section {
+  width: 75%;
+  float: left;
+  border-right: 5px solid black;
+  height: 768px;
+  padding: 25px;
+}
+
+img {
+  max-width: 80%;
+  padding: 20px;
+}
+
+form {
+  padding-top: 50px;
+}
+
+.modal {
+  display: none;
+  clear: both;
+  width: 600px;
+  margin-left: 40px;
+  border: 2px solid black;
+  text-align: center;
+  z-index: 2;
+  position: absolute;
+  top: 300px;
+  background: #fff; 
+}
+
+.close {
+  text-align: right;
+}
+
+.subscribe {
+
+}

@@ -1,2 +1,170 @@
 
-@import 'stuff';
+body {
+  font-size: 16px;
+  background: #fff;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
+.container {
+	margin: auto;
+	width: 100%;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 960px;
+  padding-top: 50px;
+}
+
+.front-2 {
+  background: #AFD0D6;
+	width: 100%;
+	background-size: cover;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+
+header {
+	background-image: url("../img/train.gif");
+	background-position: center center;
+	height: 580px;
+	width: 100%;
+	background-size: cover;
+	background-repeat:no-repeat;
+  background-attachment:fixed;
+  z-index: -2;
+}
+
+
+#first-title {
+  font-size: 3em;
+  color: #fff;
+  text-align: center;
+  clear: both;
+  padding-top: 200px;
+}
+
+h1 {
+  font-size: 3em;
+  padding: .5em;
+}
+
+h2 {
+  font-size: 2.5em;
+  padding: .5em;
+}
+
+h3 {
+  font-size: 2em;
+  padding: .5em;
+}
+
+.icon {
+  display: block;
+  float: left;
+  padding: 30px;
+}
+
+.icon a {
+  text-decoration: none;
+}
+
+#about-header {
+  background-image: url("../img/elephants.jpg");
+  background-position: center center;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat:no-repeat;
+}
+
+#first-row {
+  background: red;
+  height: 250px;
+  width: 100%;
+}
+
+.hamburger{
+  position:absolute;
+  top:10px;
+  left:10px;
+  width:40px;
+  height:40px;
+  z-index:50;
+  background: url('../img/hamburger.svg');
+  background-size: 32px 32px;
+  background-position: 4px 4px;
+  display: none;
+}
+#container {
+  position: relative;
+}
+
+/* Navigation */
+
+nav {
+  clear: both;
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+
+nav li {
+  float: left;
+  width: 180px;
+  height: 50px;
+  padding-top: 10px;
+  background: rgba(0,0,0,0.3);
+  border-right: 1px solid white;
+
+}
+
+nav a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 1px white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background-color: #000;
+}
+
+nav a.active {
+  background-color: #fff;
+  text-decoration: none;
+}
+
+#mobile-nav {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  width: 220px;
+  height: auto;
+}
+
+#mobile-nav li {
+  float: left;
+  width: 220px;
+  height: 50px;
+  padding-top: 10px;
+  background: rgba(0,0,0,0.3);
+}
+
+#mobile-nav a {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 40px;
+  padding-left: 10px;
+  border: 1px white;
+  text-decoration: none;
+}
