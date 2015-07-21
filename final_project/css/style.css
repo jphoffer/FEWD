@@ -4,6 +4,7 @@ body {
   background: #fff;
   margin: 0 auto;
   line-height: 1.5em;
+  width: 100%;
 }
 
 .container {
@@ -57,11 +58,13 @@ header {
 h1 {
   font-size: 3em;
   padding: .5em;
+  text-align: center;
 }
 
 h2 {
   font-size: 2.5em;
   padding: .5em;
+  line-height: 1.0em;
 }
 
 h3 {
@@ -89,7 +92,7 @@ h3 {
 }
 
 #first-row {
-  background: red;
+  border-top: 1px solid black;
   height: 250px;
   width: 100%;
 }
@@ -115,7 +118,25 @@ h3 {
   height: 300px;
   width: 300px;
   border: 1px black solid;
+  margin: 0 auto;
+  display: none;
 }
+
+
+#btn {
+  background: #3498db;
+  border-radius: 15px;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  margin: 0 auto;
+}
+
+#btn a {
+  text-decoration: none;
+  color: #000;
+}
+
 
 /* Navigation */
 
