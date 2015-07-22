@@ -1,5 +1,5 @@
 //Define prototypical Gallery function
-Element.prototype.Gallery = function(){
+Element.prototype.llery = function(){
   var gallery = this;
   var ul = gallery.children[0];
   var photos = {};

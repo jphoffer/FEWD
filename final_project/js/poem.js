@@ -3,19 +3,14 @@ shuffle(arr);
 console.log(arr);
 
 var writePoem = function(){
-
   var poem = document.getElementById('poem-text');
-  var words = shuffle(arr);
-
+  var words = shuffle(arr.join(' '));
   poem.innerHTML = words;
 
 };
 
  var btn = document.getElementById('btn');
- btn.addEventListener('click', function(writePoem){
-   document.getElementById('poem-text').style.display="block";
-
- });
+ btn.addEventListener('mousedown', (writePoem));
 
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
@@ -32,6 +27,7 @@ function shuffle(array) {
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
+
 
   return array;
 }

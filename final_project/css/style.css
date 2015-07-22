@@ -15,7 +15,7 @@ body {
 section {
   margin: 0 auto;
   max-width: 960px;
-  padding-top: 50px;
+  padding-top: 30px;
 }
 
 .front-2 {
@@ -75,7 +75,9 @@ h3 {
 .icon {
   display: block;
   float: left;
-  padding: 30px;
+  padding-top: 30px;
+  padding-left: 30px;
+  opacity: 1.0;
 }
 
 .icon a {
@@ -95,6 +97,15 @@ h3 {
   border-top: 1px solid black;
   height: 250px;
   width: 100%;
+  background-image: url("../img/chalkboard-black.jpg");
+  opacity: 0.8;
+  color: #fff;
+  background-attachment: fixed;
+}
+
+#first-row a{
+  color: white;
+  text-decoration: none;
 }
 
 .hamburger{
@@ -113,13 +124,13 @@ h3 {
   position: relative;
 }
 
-
+/* Poems */
 #poem-text {
   height: 300px;
   width: 300px;
   border: 1px black solid;
   margin: 0 auto;
-  display: none;
+  /* display: none; */
 }
 
 
@@ -203,4 +214,12 @@ nav a.active {
   padding-left: 10px;
   border: 1px white;
   text-decoration: none;
+}
+
+/* Footer */
+
+footer {
+  background: #cccccc;
+  height: auto;
+  font-size: 16px;
 }
