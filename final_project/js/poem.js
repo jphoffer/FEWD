@@ -1,17 +1,24 @@
-var arr = ['monkey', '</br>', '</br>', 'banana', 'brain', 'zombie', 'prom']
-shuffle(arr);
-console.log(arr);
+var arr = ['monkey', '</br>', '</br>', 'banana', 'brain', 'zombie', 'prom', 'fatal', 'mourning']
+
 
 var writePoem = function(){
   var poem = document.getElementById('poem-text');
-  var words = shuffle(arr.join(' '));
-  poem.innerHTML = words;
+  var words = shuffle(arr);
+  poem.innerHTML = words.join(' ');
+
+  for (i = 0; i > words.length; i++){
+    console.log(i);
+  };
+
 
 };
 
  var btn = document.getElementById('btn');
- btn.addEventListener('mousedown', (writePoem));
+ btn.addEventListener('mousedown',writePoem);
 
+
+
+ // Shuffle that shit
 function shuffle(array) {
   var currentIndex = array.length, temporaryValue, randomIndex ;
 
@@ -31,5 +38,3 @@ function shuffle(array) {
 
   return array;
 }
-
-writePoem();

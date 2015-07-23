@@ -84,6 +84,12 @@ h3 {
   text-decoration: none;
 }
 
+.excerpts {
+  width: 45%;
+  float: left;
+  margin-left: 2%;
+}
+
 #about-header {
   background-image: url("../img/typewriter.jpg");
   background-position: center center;
@@ -126,11 +132,8 @@ h3 {
 
 /* Poems */
 #poem-text {
-  height: 300px;
   width: 300px;
-  border: 1px black solid;
   margin: 0 auto;
-  /* display: none; */
 }
 
 
@@ -141,6 +144,8 @@ h3 {
   padding: 10px;
   width: 100px;
   margin: 0 auto;
+  margin-bottom: 1.5em;
+  text-align: center;
 }
 
 #btn a {
