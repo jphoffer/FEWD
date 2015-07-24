@@ -200,7 +200,7 @@ nav a.active {
   background-color: #fff;
   position: absolute;
   width: 220px;
-  height: auto;
+  height: 100%;
 }
 
 #mobile-nav li {

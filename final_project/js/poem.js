@@ -1,4 +1,4 @@
-var arr = ['monkey', '</br>', '</br>', 'banana', 'brain', 'zombie', 'prom', 'fatal', 'mourning']
+var arr = ['monkey', '</br>', '</br>', 'banana', 'brain', 'wander', 'cell', 'prom', 'fatal', 'mourning']
 
 
 var writePoem = function(){
@@ -6,12 +6,11 @@ var writePoem = function(){
   var words = shuffle(arr);
   poem.innerHTML = words.join(' ');
 
-  for (i = 0; i > words.length; i++){
-    console.log(i);
-  };
-
 
 };
+
+  Math.floor((Math.random() * 3) + 1);
+
 
  var btn = document.getElementById('btn');
  btn.addEventListener('mousedown',writePoem);
@@ -20,8 +19,8 @@ var writePoem = function(){
 
  // Shuffle that shit
 function shuffle(array) {
-  var currentIndex = array.length, temporaryValue, randomIndex ;
-
+  var currentIndex = Math.floor((Math.random() * 3) + 1), temporaryValue, randomIndex ;
+  console.log(currentIndex);
   // While there remain elements to shuffle...
   while (0 !== currentIndex) {
 
@@ -34,7 +33,6 @@ function shuffle(array) {
     array[currentIndex] = array[randomIndex];
     array[randomIndex] = temporaryValue;
   }
-
 
   return array;
 }
