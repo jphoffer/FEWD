@@ -9,7 +9,6 @@ var writePoem = function(){
 
 };
 
-  Math.floor((Math.random() * 3) + 1);
 
 
  var btn = document.getElementById('btn');
@@ -19,20 +18,29 @@ var writePoem = function(){
 
  // Shuffle that shit
 function shuffle(array) {
-  var currentIndex = Math.floor((Math.random() * 3) + 1), temporaryValue, randomIndex ;
-  console.log(currentIndex);
+  var currentIndex = array.length, temporaryValue, randomIndex;
+  //console.log(currentIndex);
+  var myArray = [];
   // While there remain elements to shuffle...
-  while (0 !== currentIndex) {
+  var i = Math.floor((Math.random() * currentIndex) +1);
+
+  while (i > 0) {
 
     // Pick a remaining element...
     randomIndex = Math.floor(Math.random() * currentIndex);
+    console.log(randomIndex);
     currentIndex -= 1;
 
     // And swap it with the current element.
     temporaryValue = array[currentIndex];
     array[currentIndex] = array[randomIndex];
+    myArray.push(array[currentIndex]);
     array[randomIndex] = temporaryValue;
+    i--;
+
   }
 
-  return array;
+
+
+  return myArray;
 }
