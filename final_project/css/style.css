@@ -103,14 +103,13 @@ h3 {
   border-top: 1px solid black;
   height: 250px;
   width: 100%;
-  background-image: url("../img/chalkboard-black.jpg");
-  opacity: 0.8;
-  color: #fff;
+  background-image: url("../img/paper.jpg");
   background-attachment: fixed;
+  background-size: cover;
 }
 
 #first-row a{
-  color: white;
+  color: #4F5D75;
   text-decoration: none;
 }
 
@@ -132,8 +131,14 @@ h3 {
 
 /* Poems */
 #poem-text {
-  width: 300px;
+  max-width: 580px;
   margin: 0 auto;
+}
+
+#poem-title {
+  font-size: 3.0em;
+  text-align: center;
+  padding-bottom: 1em;
 }
 
 
