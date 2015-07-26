@@ -1,34 +1,5 @@
-
-body {
-  font-size: 16px;
-  background: #fff;
-  margin: 0 auto;
-  line-height: 1.5em;
-  width: 100%;
-}
-
-.container {
-	margin: auto;
-	width: 100%;
-}
-
-section {
-  margin: 0 auto;
-  max-width: 960px;
-  padding-top: 30px;
-}
-
-.front-2 {
-  background: #AFD0D6;
-	width: 100%;
-	background-size: cover;
-  max-width: 960px;
-  margin: 0 auto;
-}
-
-
 header {
-	background-image: url("../img/train.gif");
+	background-image: url("../img/market.gif");
 	background-position: center center;
 	height: 580px;
 	width: 100%;
@@ -38,69 +9,51 @@ header {
   z-index: -2;
 }
 
-
 #home-title {
   font-size: 3em;
   color: #fff;
   text-align: center;
   clear: both;
-  padding-top: 200px;
+  padding-top: 5.5em;
+  line-height: 1.0em;
 }
 
-#page-title {
+#inner-title {
   font-size: 3em;
   color: #fff;
   text-align: center;
   clear: both;
-  padding-top: 100px;
-}
-
-h1 {
-  font-size: 3em;
-  padding: .5em;
-  text-align: center;
-}
-
-h2 {
-  font-size: 2.5em;
-  padding: .5em;
-  line-height: 1.0em;
-}
-
-h3 {
-  font-size: 2em;
-  padding: .5em;
+  padding-top: 5.0em;
 }
 
 .icon {
   display: block;
   float: left;
-  padding-top: 30px;
-  padding-left: 30px;
-  opacity: 1.0;
+  width: 25%;
+  padding-top: 1.75em;
+  padding-left: 1.75em;
+  font-size: 1.25em;
 }
 
 .icon a {
   text-decoration: none;
 }
 
-.excerpts {
-  width: 45%;
-  float: left;
-  margin-left: 2%;
+#excerpts {
+
 }
 
-#about-header {
-  background-image: url("../img/typewriter.jpg");
+#inner-header {
+  background-image: url("../img/keys.jpg");
   background-position: center center;
   height: 350px;
   width: 100%;
   background-size: cover;
   background-repeat:no-repeat;
+  margin-bottom: 3.0em;
 }
 
 #first-row {
-  border-top: 1px solid black;
   height: 250px;
   width: 100%;
   background-image: url("../img/paper.jpg");
@@ -111,22 +64,6 @@ h3 {
 #first-row a{
   color: #4F5D75;
   text-decoration: none;
-}
-
-.hamburger{
-  position:absolute;
-  top:10px;
-  left:10px;
-  width:40px;
-  height:40px;
-  z-index:50;
-  background: url('../img/hamburger.svg');
-  background-size: 32px 32px;
-  background-position: 4px 4px;
-  display: none;
-}
-#container {
-  position: relative;
 }
 
 /* Poems */
@@ -141,13 +78,12 @@ h3 {
   padding-bottom: 1em;
 }
 
-
 #btn {
   background: #3498db;
   border-radius: 15px;
-  font-size: 20px;
-  padding: 10px;
-  width: 100px;
+  font-size: 1.25em;
+  padding: 1.0em;
+  width: 6.25em;
   margin: 0 auto;
   margin-bottom: 1.5em;
   text-align: center;
@@ -157,7 +93,6 @@ h3 {
   text-decoration: none;
   color: #000;
 }
-
 
 /* Navigation */
 
@@ -204,15 +139,15 @@ nav a.active {
   display: none;
   background-color: #fff;
   position: absolute;
-  width: 220px;
+  width: 13.75em;
   height: 100%;
 }
 
 #mobile-nav li {
   float: left;
-  width: 220px;
-  height: 50px;
-  padding-top: 10px;
+  width: 13.75em;
+  height: 3.0em;
+  padding-top: .75em;
   background: rgba(0,0,0,0.3);
 }
 
@@ -226,10 +161,24 @@ nav a.active {
   text-decoration: none;
 }
 
+.hamburger{
+  position:absolute;
+  top:1.0em;
+  left:1.0em;
+  width:2.5em;
+  height:2.5em;
+  z-index:50;
+  background: url('../img/hamburger.svg');
+  background-size: 32px 32px;
+  background-position: 4px 4px;
+  display: none;
+}
+
 /* Footer */
 
 footer {
   background: #cccccc;
   height: auto;
-  font-size: 16px;
+  margin-top: 3.5em;
+  clear: both;
 }

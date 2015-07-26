@@ -1,0 +1,45 @@
+
+body {
+  font-size: 16px;
+  background: #fff;
+  margin: 0 auto;
+  line-height: 1.5em;
+  width: 100%;
+}
+
+#container {
+  position: relative;
+}
+
+.container {
+	margin: auto;
+	width: 100%;
+}
+
+img {
+  margin: 1.0em;
+  max-width: 90%;
+}
+
+section {
+  margin: 0 auto;
+  max-width: 85%;
+  padding-top: 1.75em;
+}
+
+h1 {
+  font-size: 3em;
+  padding: .5em;
+  line-height: 1.0em;
+}
+
+h2 {
+  font-size: 2.5em;
+  padding: .5em;
+  line-height: 1.0em;
+}
+
+h3 {
+  font-size: 2em;
+  padding: .5em;
+}
