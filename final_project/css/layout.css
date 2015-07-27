@@ -9,6 +9,16 @@ header {
   z-index: -2;
 }
 
+#inner-header {
+  background-image: url("../img/keys.jpg");
+  background-position: center center;
+  height: 350px;
+  width: 100%;
+  background-size: cover;
+  background-repeat:no-repeat;
+  margin-bottom: 3.0em;
+}
+
 #home-title {
   font-size: 3em;
   color: #fff;
@@ -40,17 +50,15 @@ header {
 }
 
 #excerpts {
-
+  max-width: 75%;
+  position: relative;
+  float: left;
+  border-right: 1px solid black;
 }
 
-#inner-header {
-  background-image: url("../img/keys.jpg");
-  background-position: center center;
-  height: 350px;
-  width: 100%;
-  background-size: cover;
-  background-repeat:no-repeat;
-  margin-bottom: 3.0em;
+.sidebar {
+  max-width: 10%;
+  float: left;
 }
 
 #first-row {
@@ -67,6 +75,14 @@ header {
 }
 
 /* Poems */
+#poem-machine {
+
+}
+
+#poem-machine h1 {
+  text-align: center;
+}
+
 #poem-text {
   max-width: 580px;
   margin: 0 auto;
@@ -76,10 +92,11 @@ header {
   font-size: 3.0em;
   text-align: center;
   padding-bottom: 1em;
+	font-family: 'Maiden Orange', cursive;
 }
 
 #btn {
-  background: #3498db;
+  background: #B1B4B5;
   border-radius: 15px;
   font-size: 1.25em;
   padding: 1.0em;
@@ -88,12 +105,6 @@ header {
   margin-bottom: 1.5em;
   text-align: center;
 }
-
-#btn a {
-  text-decoration: none;
-  color: #000;
-}
-
 /* Navigation */
 
 nav {
