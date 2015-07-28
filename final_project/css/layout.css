@@ -59,6 +59,16 @@ header {
 .sidebar {
   max-width: 10%;
   float: left;
+	padding-left: 0.75em;
+}
+
+.sidebar ul {
+  display: block;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
 }
 
 #first-row {
@@ -97,7 +107,7 @@ header {
 
 #btn {
   background: #B1B4B5;
-  border-radius: 15px;
+  border-radius: 1.0em;
   font-size: 1.25em;
   padding: 1.0em;
   width: 6.25em;
@@ -124,7 +134,6 @@ nav li {
   padding-top: 10px;
   background: rgba(0,0,0,0.5);
   border-right: 1px solid white;
-
 }
 
 nav a {
@@ -145,6 +154,8 @@ nav a.active {
   background-color: #fff;
   text-decoration: none;
 }
+
+/* Mobile Nav */
 
 #mobile-nav {
   display: none;

@@ -63,6 +63,15 @@ header h1 {
   margin-top: 50px;
 }
 
+.sidebar ul {
+  display: block;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
 section {
   width: 75%;
   float: left;
@@ -90,7 +99,7 @@ form {
   z-index: 2;
   position: absolute;
   top: 300px;
-  background: #fff; 
+  background: #fff;
 }
 
 .close {
