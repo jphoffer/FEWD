@@ -1,16 +1,23 @@
+html {
+  height: 100%;
+}
 
 body {
+  position: relative;
+  padding-bottom: 6em;
   font-size: 16px;
   background: #fff;
   margin: 0 auto;
   line-height: 1.5em;
   width: 100%;
+  min-height: 100%;
 }
 
 #container {
   position: relative;
   margin: auto;
   width: 100%;
+  min-height: 100%;
 }
 
 img {

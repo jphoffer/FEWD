@@ -1,7 +1,7 @@
 header {
 	background-image: url("../img/market.gif");
 	background-position: center center;
-	height: 580px;
+	height: 36em;
 	width: 100%;
 	background-size: cover;
 	background-repeat:no-repeat;
@@ -199,8 +199,10 @@ nav a.active {
 /* Footer */
 
 footer {
-  background: #cccccc;
-  height: auto;
-  margin-top: 3.5em;
-  clear: both;
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 1em;
+  background: #cccccc
 }
