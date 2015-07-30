@@ -29,6 +29,7 @@ section {
   margin: 0 auto;
   max-width: 70%;
   padding-top: 1.75em;
+  clear:both;
 }
 
 p {
@@ -56,4 +57,8 @@ h4 {
   font-size: 1.75em;
   padding: .5em;
   line-height: 1.0em;
+}
+
+.clearfix {
+  clear:both;
 }

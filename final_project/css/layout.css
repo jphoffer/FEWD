@@ -36,17 +36,43 @@ header {
   padding-top: 5.0em;
 }
 
+#first-row {
+  width: 100%;
+  background-image: url("../img/paper.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+	padding-bottom: 2.5em;
+}
+
+#first-row a{
+  color: #4F5D75;
+  text-decoration: none;
+}
+
 .icon {
-  display: block;
   float: left;
-  width: 25%;
+	width: 30%;
   padding-top: 1.75em;
-  padding-left: 1.75em;
+  padding-left: 1.0em;
   font-size: 1.25em;
+	-webkit-transition: width 2s, height 2s, background-color 2s, -webkit-transform 2s;
+	 transition: width 2s, height 2s, background-color 2s, transform 2s;
+}
+
+.icon img:hover {
+	height: 350px;
+	width: 350px;
+}
+.icon:hover {
+	font-size: 3.0em
 }
 
 .icon a {
   text-decoration: none;
+}
+
+.front-text {
+	clear: both;
 }
 
 #excerpts {
@@ -54,12 +80,14 @@ header {
   position: relative;
   float: left;
   border-right: 1px solid black;
+	line-height: 1.75em;
 }
 
 .sidebar {
   max-width: 10%;
   float: left;
-	padding-left: 0.75em;
+	padding-left: 1.5em;
+	line-height: 2.0em;
 }
 
 .sidebar ul {
@@ -71,18 +99,6 @@ header {
   color: #000;
 }
 
-#first-row {
-  height: 250px;
-  width: 100%;
-  background-image: url("../img/paper.jpg");
-  background-attachment: fixed;
-  background-size: cover;
-}
-
-#first-row a{
-  color: #4F5D75;
-  text-decoration: none;
-}
 
 /* Poems */
 #poem-machine {
@@ -100,6 +116,7 @@ header {
 
 #poem-title {
   font-size: 3.0em;
+	line-height: 1.0em;
   text-align: center;
   padding-bottom: 1em;
 	font-family: 'Maiden Orange', cursive;
