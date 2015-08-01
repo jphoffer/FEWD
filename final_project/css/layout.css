@@ -172,12 +172,13 @@ nav a.active {
   display: none;
   background-color: rgba(0,0,0,0.3);
   position: absolute;
-  width: 13.75em;
+	right: 0px;
+	width: 13.75em;
   height: 100%;
 }
 
 #mobile-nav li {
-  float: left;
+  float: right;
   width: 13.75em;
   height: 3.0em;
   padding-top: .75em;
@@ -196,6 +197,11 @@ nav a.active {
 
 #mobile-nav ul {
 	height: 100%;
+}
+
+.nav-item {
+	display: block;
+	width: 200px;
 }
 
 .hamburger{

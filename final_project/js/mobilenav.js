@@ -8,7 +8,7 @@ Element.prototype.Nav = function(){
 
   this.toggleNav = function(){
     if(container.style.right === "0px"){
-      container.style.right = "220px";
+      container.style.right = "13.75em";
     }
     else{
       container.style.right = "0px";
