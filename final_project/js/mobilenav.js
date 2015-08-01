@@ -6,28 +6,22 @@ Element.prototype.Nav = function(){
       btn = document.createElement('div'),
       container = document.getElementById('container');
 
-      console.log(sections);
-
   this.toggleNav = function(){
-    console.log(container.style.left)
-    if(container.style.left === "0px"){
-      container.style.left = "220px";
+    if(container.style.right === "0px"){
+      container.style.right = "220px";
     }
     else{
-      container.style.left = "0px";
+      container.style.right = "0px";
     }
   };
 
   this.createButton = function(){
 
     btn.classList.add('hamburger');
-      console.log("btn created")
     btn.addEventListener('mousedown',nav.toggleNav);
-
     container.appendChild(btn);
 
   };
-
 
   // hide all sections
   this.hideSections = function(){
