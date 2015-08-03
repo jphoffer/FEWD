@@ -56,21 +56,24 @@ header {
 	width: 30%;
   padding-top: 1.75em;
   padding-left: 1.0em;
-  font-size: 1.25em;
+	text-align: center;
 }
 
 .icon a {
   text-decoration: none;
+	font-size: 1.75em;
 }
 
-.front-text {
+.front-text p{
 	clear: both;
+	font-size: 1.5em;
 }
 
 #excerpts {
   max-width: 75%;
 	background: #fff;
   position: relative;
+	padding-bottom: 5.0em;
   float: left;
   border-right: 1px solid black;
 	line-height: 1.75em;
@@ -170,7 +173,7 @@ nav a.active {
 
 #mobile-nav {
   display: none;
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0,0,0,0.7);
   position: absolute;
 	right: 0px;
 	width: 13.75em;
@@ -224,5 +227,5 @@ footer {
 	right: 0;
 	bottom: 0;
 	left: 0;
-  background: #cccccc
+  background: rgba(0,0,0,0.7);
 }

@@ -24,6 +24,9 @@
 
   .sidebar {
     padding-top: 2em;
+    padding-left: 0.0em;
+    padding-bottom: 2em;
+    margin-left: 1.75em;
     width: 100%;
     max-width: 100%;
   }
@@ -56,6 +59,9 @@
 
   .sidebar {
     padding-top: 2em;
+    padding-left: 0.0em;
+    padding-bottom: 2em;
+    margin-left: 1.75em;
     width: 100%;
     max-width: 100%;
   }
@@ -72,6 +78,36 @@
     margin: 0 auto;
     max-width: 70%;
     padding-top: 1.75em;
+  }
+
+  #mobile-nav {
+    display: block;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav {
+    display: none;
+  }
+
+  #excerpts {
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid black;
+  }
+
+  .sidebar {
+    padding-top: 2em;
+    padding-left: 0.0em;
+    padding-bottom: 2em;
+    margin-left: 1.75em;
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .icon {
+    float: none;
+    width: auto;
   }
 
 
