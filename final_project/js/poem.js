@@ -24,7 +24,7 @@ function arrange(array) {
   var currentIndex = array.length, temporaryValue, randomIndex;
 
   var otherArray = [];
-  // While there remain elements to shuffle...
+
   var x = Math.floor((Math.random() * 3) +1);
 
   while (x > 0) {

@@ -80,16 +80,6 @@
     padding-top: 1.75em;
   }
 
-  #mobile-nav {
-    display: block;
-  }
-  .hamburger {
-    display: block;
-  }
-  nav {
-    display: none;
-  }
-
   #excerpts {
     max-width: 100%;
     border-right: none;

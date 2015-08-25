@@ -8,7 +8,7 @@ header {
 	background-repeat:no-repeat;
   background-attachment:fixed;
   z-index: -2;
-}
+} 
 
 #inner-header {
   background-image: url("../img/keys.jpg");
@@ -35,7 +35,15 @@ header {
   color: #fff;
   text-align: center;
   clear: both;
-  padding-top: 5.0em;
+  padding-top: 4.0em;
+}
+
+#inner-title span {
+   color: #fff;
+	 text-align: center;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
 }
 
 #first-row {
