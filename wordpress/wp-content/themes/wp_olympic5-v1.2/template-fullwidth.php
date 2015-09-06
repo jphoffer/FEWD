@@ -11,6 +11,7 @@
 		<div class="col-sm-12">
 			<?php while ( have_posts() ) : the_post(); ?>
 				<article id="post-<?php the_ID(); ?>" <?php post_class('row entry'); ?>>
+
 					<div class="col-md-12">
 						<?php if ( ci_has_image_to_show() ) : ?>
 							<figure class="entry-thumb">
@@ -24,7 +25,7 @@
 							<?php the_content(); ?>
 							<?php wp_link_pages(); ?>
 						</div>
-					</div>
+					</div> 
 				</article>
 
 				<div class="row">

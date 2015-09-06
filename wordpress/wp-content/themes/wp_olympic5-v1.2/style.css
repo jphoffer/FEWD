@@ -601,6 +601,7 @@ ul.archive a:hover {
 	font-size: 24px;
 	color: #000;
 	text-transform: uppercase;
+	text-align: center;
 	letter-spacing: -0.04em;
 }
 
@@ -1392,4 +1393,11 @@ h2.tribe-events-page-title, #tribe-geo-results h2.tribe-events-page-title {
 	font-family: "Helvetica Neue", sans-serif;
 	font-size: 16px;
 	margin-bottom: 0;
+}
+
+
+/*My Stuff */
+
+.entry-thumb img {
+	text-align: center;
 }

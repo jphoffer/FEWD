@@ -8,7 +8,7 @@
 
 			$slides = new WP_Query($args);
 		?>
-		
+
 		<?php while ( $slides->have_posts() ) : $slides->the_post(); ?>
 			<?php
 				$slider_url = get_post_meta( get_the_ID(), 'ci_cpt_slider_url', true );
